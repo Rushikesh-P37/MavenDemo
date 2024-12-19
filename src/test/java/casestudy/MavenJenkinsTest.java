@@ -25,7 +25,9 @@ public class MavenJenkinsTest {
 	@Test
 	public void getURL() {
 		driver = new ChromeDriver();
-		driver.manage().window().maximize(); 
+		Dimension point = new Dimension(450,600);
+		driver.manage().window().setSize(point);
+		//driver.manage().window().maximize(); 
 		driver.get("https://in.bookmyshow.com/");
 	}
 
