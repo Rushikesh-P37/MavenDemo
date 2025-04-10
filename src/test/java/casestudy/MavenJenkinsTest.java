@@ -20,7 +20,6 @@ public class MavenJenkinsTest {
 		String driverPath = System.getProperty("user.dir");
 		System.setProperty("webdriver.chrome.driver", driverPath+ "//Drivers//chromedriver.exe");
 	}
-	
 
 	@Test
 	public void getURL() {
